@@ -63,7 +63,7 @@ This function enables you to create  a mapping to apply on your column and follo
 |7e1e7bdf|    0.001857|
 |(...)|(...)|
 
-    new_product_map=percentage_encoder(df,'product_code',0.003)
+    new_product_map=threshold_encoder(df,'product_code',0.003)
     df['product_code']=df['product_code'].map(lambda x: new_product_map.get(x,'other'))
     df['product_code'].value_counts(True)
 |  product_code|frequency  |
