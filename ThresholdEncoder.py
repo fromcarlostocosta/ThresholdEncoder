@@ -1,6 +1,6 @@
 # Packages
 import pandas as pd
-import tabulate
+from tabulate import tabulate
 
 # Simple encoder for limiting your categorical feature based on threshold %
 # Arguments: dataframe, column, threshold
